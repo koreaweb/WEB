@@ -4,9 +4,42 @@
   <title>WEB - HTML</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function nightDayHandeler(self) {
+      var target = document.querySelector('body');
+  if(self.value === 'night') {
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  self.value = 'day';
+  var alist = document.querySelectorAll('a');
+i = 0
+while(i < alist.length){
+console.log('alist[i]');
+alist[i].style.color = 'white';
+i = i + 1;
+}
+document.querySelector('#active').style.color = 'red';
+  } else {
+ target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  self.value = 'night';
+  var alist = document.querySelectorAll('a');
+i = 0
+while(i < alist.length){
+console.log('alist[i]');
+alist[i].style.color = 'black';
+i = i + 1;
+}
+document.querySelector('#active').style.color = 'red';
+  }
+    }
+  </script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+  nightDayHandeler(this);
+  ">
   <div id="grid">
   <ol>
     <li><a href="1.html" id="active">HTML</a></li>
@@ -15,7 +48,6 @@
   </ol>
   <div id="article">
   <h2>HTML</h2>
-  <p style="margin-bottom:10px">생활코딩(사진을 클릭해서 채널로 이동하세요)님의 영상을 보고 배우는 중입니다.<br><a href="https://www.youtube.com/user/egoing2" target="_blank"><img src="SpecialThanks.png" width="15%"></a></p>
 
   <p style="margin-bottom:40px">h(숫자 1~6) 태그는 숫자가 낮을수록 글씨를 크게 만들어줍니다. 가장 위에 있는 HTML이 그것을 이용한 것입니다.</p>
 

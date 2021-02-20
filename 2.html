@@ -4,9 +4,42 @@
   <title>WEB - CSS</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function nightDayHandeler(self) {
+      var target = document.querySelector('body');
+  if(self.value === 'night') {
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  self.value = 'day';
+  var alist = document.querySelectorAll('a');
+i = 0
+while(i < alist.length){
+console.log('alist[i]');
+alist[i].style.color = 'white';
+i = i + 1;
+}
+document.querySelector('#active').style.color = 'red';
+  } else {
+ target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  self.value = 'night';
+  var alist = document.querySelectorAll('a');
+i = 0
+while(i < alist.length){
+console.log('alist[i]');
+alist[i].style.color = 'black';
+i = i + 1;
+}
+document.querySelector('#active').style.color = 'red';
+  }
+    }
+  </script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+  nightDayHandeler(this);
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
