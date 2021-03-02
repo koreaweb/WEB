@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <script>
-    function nightDayHandeler(self) {
+    function nightDayHandler(self) {
       var target = document.querySelector('body');
   if(self.value === 'night') {
   target.style.backgroundColor = 'black';
@@ -39,7 +39,7 @@ document.querySelector('#active').style.color = 'red';
 
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="night" onclick="
-  nightDayHandeler(this);
+  nightDayHandler(this);
   ">
 
   <div id="grid">
