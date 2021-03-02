@@ -1,2 +1,2 @@
 # WEB
-한국인을 위한 생활코딩님을 위한 WEB 입니다. Html과 CSS, Javascript에 대해 나와있습니다.
+Using HTML, CSS and JavaScript to make this website. for my friends. NO ONE CAN WATCH THIS I THINK. DON'T JOIN MY WEBSITE. IT'S SO MANY KOREANS BECAUSE KOREA PERSON WAS MEDE THIS WEBSITE. AND ALWAYS UPDATED.
